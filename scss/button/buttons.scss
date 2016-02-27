@@ -1,0 +1,48 @@
+@import '../vars/colors.scss';
+@import '../vars/fonts.scss';
+@import './reset-button.scss';
+
+$local-button-color: $root-color-dark;
+$local-button-bg-color: $root-color-white;
+$local-button-padding: 10px;
+$local-button-margin: 10px;
+$local-button-border-radius: 3px;
+$local-button-fs: $root-fs;
+$local-button-lh: $root-lh;
+
+$local-button-primary-bg-color: $root-color-primary;
+$local-button-primary-color: $root-color-white;
+
+.cp-button {
+  padding: $local-button-padding;
+  border: 1px solid darken($local-button-bg-color, 25%);
+  font-size: $local-button-fs;
+  line-height: $local-button-lh;
+  color: $local-button-color;
+  background: $local-button-bg-color;
+  @if $local-button-border-radius > 0 {
+    border-radius: $local-button-border-radius;
+  }
+
+  &:active, &:hover:active {
+    background: darken($local-button-bg-color, 15%);
+  }
+
+  &:hover {
+    background: darken($local-button-bg-color, 10%);
+  }
+
+  &.primary {
+    border: 1px solid darken($local-button-primary-bg-color, 25%);
+    background: $local-button-primary-bg-color;
+    color: $local-button-primary-color;
+
+    &:active, &:hover:active {
+      background: lighten($local-button-primary-bg-color, 15%);
+    }
+
+    &:hover {
+      background: lighten($local-button-primary-bg-color, 10%);
+    }
+  }
+}

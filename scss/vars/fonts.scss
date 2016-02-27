@@ -1,0 +1,9 @@
+$root-font-family-basic: HelveticaNeue, Helvetica, Arial, sans-serif;
+$root-fs: 16px;
+$root-lh: 1.2;
+
+body {
+  font-size: $root-fs;
+  line-height: $root-lh;
+  font-family: $root-font-family-basic;
+}

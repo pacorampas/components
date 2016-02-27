@@ -1,0 +1,34 @@
+@import '../vars/colors.scss';
+@import '../vars/fonts.scss';
+
+$local-checkbox-color: $root-color-dark;
+$local-checkbox-padding: 5px 0;
+$local-checkbox-fs: $root-fs;
+$local-checkbox-lh: $root-fs;
+$local-checkbox-fs: $root-fs;
+$local-checkbox-lh: $root-lh;
+
+$local-list-checkboxes-margin-checkboxes: 0 10px;
+$local-list-checkboxes-title-fs: 16px;
+
+.cp-checkbox {
+  display: block;
+  padding: $local-checkbox-padding;
+  font-size: $local-checkbox-fs;
+  line-height: $local-checkbox-lh;
+
+  & input[type="checkbox"] {
+    position: relative;
+    top: -2px;
+  }
+}
+
+.cp-list-checkboxes {
+  > p {
+    font-size: $local-list-checkboxes-title-fs;
+  }
+
+  > ul {
+    margin: $local-list-checkboxes-margin-checkboxes;
+  }
+}

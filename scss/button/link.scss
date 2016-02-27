@@ -1,0 +1,32 @@
+@import '../vars/colors.scss';
+@import '../vars/fonts.scss';
+
+$local-link-color: $root-color-primary;
+$local-link-padding: 0;
+
+$local-link-primary-bg-color: $root-color-primary;
+$local-link-primary-color: $root-color-white;
+
+.cp-link {
+  display: inline;
+  padding: $local-link-padding;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  color: $local-link-color;
+  text-decoration: underline;
+  border: 0;
+  background: transparent;
+
+  &:active, &:hover:active {
+    color: darken($local-link-color, 25%);
+  }
+
+  &:hover {
+    color: darken($local-link-color, 15%);
+  }
+
+  &:visited {
+    color: darken($local-link-color, 15%);
+  }
+}
