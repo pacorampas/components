@@ -1,9 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
+@import '../node_modules/normalize.css/normalize';
+@import './vars/fonts';
+
+body {
+  font-size: $root-fs;
+  line-height: $root-lh;
+  font-family: $root-font-family-basic;
 }
 
-@import './form/inputs.scss';
-@import './form/checkboxes.scss';
-@import './button/buttons.scss';
-@import './button/link.scss';
+@import './input/input.scss';
+@import './checkbox/checkbox.scss';
+@import './button/button.scss';
+@import './link/link.scss';

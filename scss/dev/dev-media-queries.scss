@@ -1,0 +1,64 @@
+@import '../vars/media-queries.scss';
+
+.screen-s {
+  display: block;
+}
+
+.screen-sm,
+.screen-m,
+.screen-l,
+.screen-xl {
+  display: none;
+}
+
+@media #{$root-media-sm} {
+  .screen-sm {
+    display: block;
+  }
+
+  .screen-s,
+  .screen-m,
+  .screen-l,
+  .screen-xl {
+    display: none;
+  }
+}
+
+@media #{$root-media-m} {
+  .screen-m {
+    display: block;
+  }
+
+  .screen-s,
+  .screen-sm,
+  .screen-l,
+  .screen-xl {
+    display: none;
+  }
+}
+
+@media #{$root-media-l} {
+  .screen-l {
+    display: block;
+  }
+
+  .screen-s,
+  .screen-sm,
+  .screen-m,
+  .screen-xl {
+    display: none;
+  }
+}
+
+@media #{$root-media-xl} {
+  .screen-xl {
+    display: block;
+  }
+
+  .screen-s,
+  .screen-sm,
+  .screen-m,
+  .screen-l {
+    display: none;
+  }
+}

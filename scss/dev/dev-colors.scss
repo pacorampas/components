@@ -1,0 +1,25 @@
+@import '../vars/colors.scss';
+
+.cp-root-color-primary {
+  background: $root-color-primary;
+}
+
+.cp-root-color-dark {
+  background: $root-color-dark;
+}
+
+.cp-root-color-gray {
+  background: $root-color-gray;
+}
+
+.cp-root-color-white {
+  background: $root-color-white;
+}
+
+.cp-root-color-info {
+  background: $root-color-info;
+}
+
+.cp-root-color-error {
+  background: $root-color-error;
+}
