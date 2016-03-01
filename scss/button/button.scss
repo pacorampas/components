@@ -1,8 +1,14 @@
 @import '../vars/colors.scss';
 @import '../vars/fonts.scss';
 
+/* reset */
+button {
+  outline: none;
+  outline-style: none;
+}
+
 $local-button-color: $root-color-dark;
-$local-button-bg-color: $root-color-white;
+$local-button-bg-color: $root-color-light;
 $local-button-padding: 10px;
 $local-button-margin: 10px;
 $local-button-border-radius: 3px;
@@ -10,7 +16,7 @@ $local-button-fs: $root-fs;
 $local-button-lh: $root-lh;
 
 $local-button-primary-bg-color: $root-color-primary;
-$local-button-primary-color: $root-color-white;
+$local-button-primary-color: $root-color-light;
 
 .cp-button {
   padding: $local-button-padding;

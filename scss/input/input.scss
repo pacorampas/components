@@ -2,6 +2,13 @@
 @import '../vars/fonts.scss';
 @import '../vars/media-queries.scss';
 @import '../mixins.scss';
+/* dependecia de: link.scss, text.scss */
+
+/* reset */
+input {
+  outline: none
+  outline-style: none;
+}
 
 $local-form-field: 20px;
 $local-input-fs: $root-fs;
@@ -32,6 +39,9 @@ $local-error-message-color: $root-color-error;
     .cp-error-message {
       display: block;
     }
+    .cp-help-text {
+      display: none;
+    }
   }
 }
 
@@ -48,6 +58,7 @@ $local-error-message-color: $root-color-error;
   line-height: $local-help-text-lh;
   color: $local-help-text-color;
   width: 100%;
+  margin: 0;
   @include ellipsis();
 
   @media #{$root-media-sm} {
@@ -62,6 +73,7 @@ $local-error-message-color: $root-color-error;
 
 .cp-error-message {
   display: none;
+  margin: 0;
   font-size: $local-error-message-fs;
   line-height: $local-error-message-lh;
   color: $local-error-message-color;

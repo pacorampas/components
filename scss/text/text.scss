@@ -1,0 +1,70 @@
+@import '../vars/fonts.scss';
+@import '../vars/colors.scss';
+
+$local-fm: $root-font-family-primary;
+$local-h1-fs: 36px;
+$local-h2-fs: 30px;
+$local-h3-fs: 24px;
+$local-h4-fs: 18px;
+$local-h5-fs: 16px;
+$local-h6-fs: 14px;
+$local-p-fs: 14px;
+$local-color-base: $root-color-dark;
+$local-color-primary: $root-color-primary;
+$local-color-secondary: $root-color-gray;
+$local-lh: $root-lh;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $local-fm;
+  line-height: $local-lh;
+  color: $local-color-base;
+  margin: 0;
+
+  &.primary {
+    color: $local-color-primary;
+  }
+
+  &.secondary {
+    color: $local-color-secondary;
+  }
+}
+
+h1 {
+  font-size: $local-h1-fs;
+}
+
+h2 {
+  font-size: $local-h2-fs;
+}
+
+h3 {
+  font-size: $local-h3-fs;
+}
+
+h4 {
+  font-size: $local-h4-fs;
+}
+
+h5 {
+  font-size: $local-h5-fs;
+}
+
+h6 {
+  font-size: $local-h6-fs;
+}
+
+p {
+  font-size: $local-p-fs;
+  line-height: $local-lh;
+  color: $local-color-base;
+  margin: 0 0 10px 0;
+
+  &.secondary {
+    color: $local-color-secondary;
+  }
+}

@@ -11,7 +11,6 @@ gulp.task('sass', function () {
   };
 
   var path = argv.component;
-
   if (path && path !== true) {
     path = path.replace('.scss','');
     if (path.search('/') < 0) {
@@ -19,8 +18,7 @@ gulp.task('sass', function () {
     }
     src = './scss/'+path+'.scss';
   } else {
-    console.error('Escribe el nombre de un componente o la ruta a él dentro '+
-        'de la carpeta scss');
+    src = './scss/*/**.scss';
   }
 
   return gulp.src(src)
