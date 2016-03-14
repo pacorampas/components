@@ -1,0 +1,131 @@
+.flex-ad {
+  margin: 0 auto 30px 0;
+  max-width: 960px;
+
+  .flex-ad-articles {
+    list-style: none;
+    float: left;
+    width: 660px;
+    height: 620px;
+    margin: 0;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+  }
+
+  .flex-ad-articles-item {
+    border: 1px #ddd solid;
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  &.relates .flex-ad-articles-item {
+    .flex-ad-articles-item-relates {
+      height: 115px;
+      background: #eee;
+    }
+  }
+
+  &.children-2 {
+    .flex-ad-articles-item {
+      height: 50%;
+    }
+
+    &.relates {
+      .flex-ad-articles-item:first-child {
+        height: 425px;
+      }
+      .flex-ad-articles-item {
+        height: 195px;
+      }
+    }
+  }
+
+  &.children-3 {
+    .flex-ad-articles-item {
+      height: 33.33%;
+    }
+
+    &.relates {
+      .flex-ad-articles-item:first-child {
+        height: 322px;
+      }
+      .flex-ad-articles-item {
+        height: 149px;
+      }
+    }
+  }
+
+  &.children-4 {
+    .flex-ad-articles-item {
+      height: 25%;
+    }
+
+    &.relates {
+      .flex-ad-articles-item:first-child {
+        height: 270px;
+      }
+      .flex-ad-articles-item {
+        height: 116.66px;
+      }
+    }
+  }
+
+  &.children-5 {
+    .flex-ad-articles-item {
+      height: 20%;
+    }
+
+    &.relates {
+      .flex-ad-articles-item:first-child {
+        height: 239px;
+      }
+      .flex-ad-articles-item {
+        height: 95.25px;
+      }
+    }
+  }
+
+  &.children-6 {
+    .flex-ad-articles-item {
+      height: 16.66%;
+    }
+
+    &.relates {
+      .flex-ad-articles-item:first-child {
+        height: 218.33px;
+      }
+      .flex-ad-articles-item {
+        height: 80.4px;
+      }
+    }
+  }
+
+  .ad {
+    float: left;
+    width: 300px;
+    height: 620px;
+    box-sizing: border-box;
+
+    > p {
+      height: 20px;
+      margin: 0;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    > span {
+      display: block;
+      height: 600px;
+      background: red;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+  }
+}
+
