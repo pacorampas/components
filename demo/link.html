@@ -4,6 +4,7 @@
   <title>Buttons</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/link/link.css">
+  <link rel="stylesheet" type="text/css" href="../partials/css/demo-page.css">
   <style>
     .code {
       margin: 10px;
@@ -14,12 +15,9 @@
   </style>
 </head>
 <body>
-  <a class="cp-link" href="#" title="link">Link</a>
-  <div class="code">
-    <textarea>
-      <button class="cp-link">Button link</button>
-      <a class="cp-link" href="#" title="link">Link</a>
-    </textarea>
-  </div>
+  @@include('../partials/sidebar.html')
+  <section class="dp-content">
+    @@include('../partials/link.html')
+  </section>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/text/text.css"><!-- dependencia -->
   <link rel="stylesheet" type="text/css" href="../css/context-notification/context-notification.css">
+  <link rel="stylesheet" type="text/css" href="../partials/css/demo-page.css">
   <style>
     .code {
       margin: 10px;
@@ -15,18 +16,9 @@
   </style>
 </head>
 <body>
-  <div class="cp-context-notification">
-    <h4>Soy una notificación</h4>
-    <p>Tengo un título de notificació que notificar al usuario.</p>
-  </div>
-  <div class="cp-context-notification error">
-    <h4>Soy una notificación errónea</h4>
-    <p>Tengo un título de notificació que notificar al usuario. Lorem fistrum a gramenawer a wan te voy a borrar el cerito ahorarr. Diodeno caballo blanco caballo negroorl a peich amatomaa pupita ese pedazo de ese hombree. Pecador ahorarr hasta luego Lucas hasta luego Lucas pecador. Caballo blanco caballo negroorl diodeno pupita torpedo al ataquerl papaar papaar se calle ustée.</p>
-  </div>
-  <div class="code">
-    <textarea>
-
-    </textarea>
-  </div>
+  @@include('../partials/sidebar.html')
+  <section class="dp-content">
+    @@include('../partials/context-notification.html')
+  </section>
 </body>
 </html>

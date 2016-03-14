@@ -4,6 +4,7 @@
   <title>Checkboxes</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/checkbox/checkbox.css">
+  <link rel="stylesheet" type="text/css" href="../partials/css/demo-page.css">
   <style>
     .code {
       margin: 10px;
@@ -14,50 +15,9 @@
   </style>
 </head>
 <body>
-  <label class="cp-checkbox">
-    <input type="checkbox" value="check"> Check
-  </label>
-  <div class="code">
-    <textarea>
-      <label class="cp-checkbox">
-        <input type="checkbox" value="check"> Check
-      </label>
-    </textarea>
-  </div>
-  <hr>
-  <div class="cp-list-checkboxes">
-    <p>List:</p>
-    <ul>
-      <li>
-        <label class="cp-checkbox">
-          <input type="checkbox" value="check"> Check
-        </label>
-      </li>
-      <li>
-        <label class="cp-checkbox">
-          <input type="checkbox" value="check"> Checkdas sd sa d sa dsa d as d as d asd as d sa d sa das d sad a <a href="https://www.google.es/?gws_rd=ssl" target="_blank">sdsa ds</a> dsads dsa dsa sd sds sa ds dsd sads dsa ds ds dsa dsa dsa dsa ds ds ds sa sad sa
-        </label>
-      </li>
-    </ul>
-  </div>
-  <div class="code">
-    <textarea>
-      <div class="cp-list-checkboxes">
-        <p>List:</p>
-        <ul>
-          <li>
-            <label class="cp-checkbox">
-              <input type="checkbox" value="check"> Check
-            </label>
-          </li>
-          <li>
-            <label class="cp-checkbox">
-              <input type="checkbox" value="check"> Checkdas sd sa d sa dsa d as d as d asd as d sa d sa das d sad a <a href="https://www.google.es/?gws_rd=ssl" target="_blank">sdsa ds</a> dsads dsa dsa sd sds sa ds dsd sads dsa ds ds dsa dsa dsa dsa ds ds ds sa sad sa
-            </label>
-          </li>
-        </ul>
-      </div>
-    </textarea>
-  </div>
+  @@include('../partials/sidebar.html')
+  <section class="dp-content">
+    @@include('../partials/checkbox.html')
+  </section>
 </body>
 </html>

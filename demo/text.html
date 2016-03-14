@@ -4,6 +4,7 @@
   <title>Text</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" type="text/css" href="../css/text/text.css">
+  <link rel="stylesheet" type="text/css" href="../partials/css/demo-page.css">
   <style>
     .code {
       margin: 10px;
@@ -14,32 +15,9 @@
   </style>
 </head>
 <body>
-  <h1>Hola soy un título</h1>
-  <h2 class="secondary">Hola soy un título</h2>
-  <h3 class="primary">Hola soy un título</h3>
-  <h4>Hola soy un título</h4>
-  <h5>Hola soy un título</h5>
-  <h6>Hola soy un título</h6>
-  <div class="code">
-    <textarea>
-      <h1>Hola soy un título</h1>
-      <h2 class="secondary">Hola soy un título</h2>
-      <h3 class="primary">Hola soy un título</h3>
-      <h4>Hola soy un título</h4>
-      <h5>Hola soy un título</h5>
-      <h6>Hola soy un título</h6>
-    </textarea>
-  </div>
-
-  <p>Soy un párrafo puedo tener varias líneas. Lorem fistrum torpedo a gramenawer ese pedazo de por la gloria de mi madre qué dise usteer sexuarl pupita apetecan ahorarr. Hasta luego Lucas llevame al sircoo no puedor a wan se calle ustée diodenoo benemeritaar. Jarl la caidita a peich quietooor está la cosa muy malar quietooor sexuarl pupita está la cosa muy malar a gramenawer ese hombree.</p>
-
-  <p class="secondary">Soy un párrafo puedo tener varias líneas. Lorem fistrum torpedo a gramenawer ese pedazo de por la gloria de mi madre qué dise usteer sexuarl pupita apetecan ahorarr. Hasta luego Lucas llevame al sircoo no puedor a wan se calle ustée diodenoo benemeritaar. Jarl la caidita a peich quietooor está la cosa muy malar quietooor sexuarl pupita está la cosa muy malar a gramenawer ese hombree.</p>
-
-  <div class="code">
-    <textarea>
-      <p>Soy un párrafo puedo tener varias líneas. Lorem fistrum torpedo a gramenawer ese pedazo de por la gloria de mi madre qué dise usteer sexuarl pupita apetecan ahorarr. Hasta luego Lucas llevame al sircoo no puedor a wan se calle ustée diodenoo benemeritaar. Jarl la caidita a peich quietooor está la cosa muy malar quietooor sexuarl pupita está la cosa muy malar a gramenawer ese hombree.</p>
-      <p class="secondary">Soy un párrafo puedo tener varias líneas. Lorem fistrum torpedo a gramenawer ese pedazo de por la gloria de mi madre qué dise usteer sexuarl pupita apetecan ahorarr. Hasta luego Lucas llevame al sircoo no puedor a wan se calle ustée diodenoo benemeritaar. Jarl la caidita a peich quietooor está la cosa muy malar quietooor sexuarl pupita está la cosa muy malar a gramenawer ese hombree.</p>
-    </textarea>
-  </div>
+  @@include('../partials/sidebar.html')
+  <section class="dp-content">
+    @@include('../partials/text.html')
+  </section>
 </body>
 </html>

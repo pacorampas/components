@@ -29,6 +29,8 @@ $local-list-checkboxes-title-fs: 16px;
   }
 
   > ul {
+    list-style: none;
+    padding-left: 0;
     margin: $local-list-checkboxes-margin-checkboxes;
   }
 }

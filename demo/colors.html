@@ -3,7 +3,8 @@
 <head>
   <title>Checkboxes</title>
   <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="../css/dev-colors/dev-colors.css">
+  <link rel="stylesheet" type="text/css" href="../css/dev/dev-colors.css">
+  <link rel="stylesheet" type="text/css" href="../partials/css/demo-page.css">
   <style>
     .palette-item {
       border: solid 1px #ddd;
@@ -11,11 +12,11 @@
       margin-bottom: 5px;
     }
 
-    ul {
+    .ul-palette {
       list-style: none;
     }
 
-    li {
+    .ul-palette li {
       float: left;
       padding: 5px;
       border: solid 1px #333;
@@ -23,37 +24,15 @@
       margin-right: 10px;
     }
 
-    p {
+    .ul-palette li p {
       font-size: 12px;
     }
   </style>
 </head>
 <body>
-  <ul>
-    <li>
-      <div class="palette-item cp-root-color-primary"></div>
-      <p>$root-color-primary</p>
-    </li>
-    <li>
-      <div class="palette-item cp-root-color-dark"></div>
-      <p>$cp-root-color-dark</p>
-    </li>
-    <li>
-      <div class="palette-item cp-root-color-gray"></div>
-      <p>$cp-root-color-gray</p>
-    </li>
-    <li>
-      <div class="palette-item cp-root-color-white"></div>
-      <p>$cp-root-color-white</p>
-    </li>
-    <li>
-      <div class="palette-item cp-root-color-info"></div>
-      <p>$cp-root-color-info</p>
-    </li>
-    <li>
-      <div class="palette-item cp-root-color-error"></div>
-      <p>$cp-root-color-error</p>
-    </li>
-  </ul>
+  @@include('../partials/sidebar.html')
+  <section class="dp-content">
+    @@include('../partials/colors.html')
+  </section>
 </body>
 </html>
